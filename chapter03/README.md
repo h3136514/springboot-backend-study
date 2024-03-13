@@ -22,7 +22,7 @@
 
 구현!
 
-역할!, 패키지![](Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.001.png)![](Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.002.png)![](Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.003.png)
+역할!, 패키지![](./img/Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.001.png)![](Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.002.png)![](./img/Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.003.png)
 
 **프레젠테이션 계층**
 
