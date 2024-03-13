@@ -31,7 +31,7 @@
 
 1. **카페와 빵집으로 이해하는 계층**
 
-HTTP 요청!![](Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.004.png)
+HTTP 요청!![](./img/Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.004.png)
 
 ![](Aspose.Words.b2654a19-cd52-47ed-ab43-05cb61eac369.005.png)
 
