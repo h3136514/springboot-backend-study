@@ -59,8 +59,11 @@
 * __스프링 데이터 JPA__:
     - JPA를 쓰기 편하게 만들어놓은 모듈
     - 스프링 데이터의 PagingAndSortingRepository 인터페이스를 상속받아 JpaRepository 인터페이스 만듦
-    - `public interface (repository이름) extends JpaRepository<(엔티티 이름), (엔티티 기본키 타입)> {}`   
-      → 엔티티에 기본 CRUD 메서드 사용 가능
+    - ```java
+      public interface (repository 이름) extends JpaRepository<(엔티티 이름), (엔티티 기본키 타입)> {
+      }
+      ```   
+      엔티티에 기본 CRUD 메서드 사용 가능
 
 
 ## ✔ 어노테이션
