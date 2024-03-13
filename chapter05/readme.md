@@ -64,7 +64,7 @@
 
 
 ## 어노테이션
-* __`Entity`__: 객체를 JPA가 관리하는 엔티티로 지정 (클래스-데이터베이스 테이블 매핑)
+* __`@Entity`__: 객체를 JPA가 관리하는 엔티티로 지정 (클래스-데이터베이스 테이블 매핑)
 * __`@NoArgsConstructor`__: 기본 생성자, public 또는 protected로 접근 제어자 설정 가능
     - `@NoArgsConstructor(access = AccessLevel.PROTECTED)`
 * __`@Id`__: 테이블의 기본키 지정
@@ -86,11 +86,13 @@
         + initialValue: DDL 생성 시 처음 시작하는 수 (기본값 0)
         + allocationSize: 시퀀스 한 번 호출에 증가하는 수 (기본값 50)
         + 등등…
+<br></br>
+    > ❓ __IDENTITY와 SEQUENCE의 차이점__:
+    > + IDENTITY: 엔티티를 데이터베이스에 저장한 후에 식별자를 조회해 할당함
+    > + SEQUENCE: DB 시퀀스(식별자)를 먼저 조회한 후 엔티티에 할당하고 엔티티를 저장
 
-    - ❓ IDENTITY와 SEQUENCE의 차이점:
-        + IDENTITY: 엔티티를 데이터베이스에 저장한 후에 식별자를 조회해 할당함
-        + SEQUENCE: DB 시퀀스(식별자)를 먼저 조회한 후 엔티티에 할당하고 엔티티를 저장
-    - ❓ SEQUENCE, TABLE의 allocationSize 기본값이 50인 이유: 시퀀스 값을 한 번에 많이 선점해서 JPA의 접근 횟수를 줄이고, 여러 JVM이 동시에 동작해도 기본키 값이 충돌하지 않음
+    > ❓ __SEQUENCE, TABLE의 allocationSize 기본값이 50인 이유__:
+    > + 시퀀스 값을 한 번에 많이 선점해서 JPA의 접근 횟수를 줄이고, 여러 JVM이 동시에 동작해도 기본키 값이 충돌하지 않음
 
 * __`@Column`__: 데이터베이스 컬럼과 필드 매핑
     - name: 필드와 매핑할 컬럼 이름 (설정하지 않으면 필드 이름으로 지정)
