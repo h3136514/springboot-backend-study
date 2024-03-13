@@ -63,7 +63,7 @@
       → 엔티티에 기본 CRUD 메서드 사용 가능
 
 
-## 어노테이션
+## ✔ 어노테이션
 * __`@Entity`__: 객체를 JPA가 관리하는 엔티티로 지정 (클래스-데이터베이스 테이블 매핑)
 * __`@NoArgsConstructor`__: 기본 생성자, public 또는 protected로 접근 제어자 설정 가능
     - `@NoArgsConstructor(access = AccessLevel.PROTECTED)`
