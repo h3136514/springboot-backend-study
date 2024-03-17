@@ -70,7 +70,7 @@ public class ch07Application {
 이제 Entity에 생성날짜에 해당하는 컬럼필드와 수정날짜에 해당하는 컬럼필드에 @CreateDate 어노테이션과, @LastModifiedDate 어노테이션을 붙여야 한다!   
 그 전에 먼저 @CreateDate 어노테이션과, @LastModifiedDate 어노테이션부터 알아보자!!!   
 
-#### @CreateDate 어노테이션?   
+### @CreateDate 어노테이션?   
 * 엔티티의 생성 날짜를 저장하기 위해 사용
 * 엔티티 클래스의 필드에 @CreateDate 어노테이션을 추가하면, 해당 필드는 엔티티가 생성될 때 자동으로 현재 날짜 및 시간을 설정!   
 
