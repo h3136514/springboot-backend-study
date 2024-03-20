@@ -71,7 +71,7 @@ public class ProviderManager implements AuthenticationManager, MessageSourceAwar
 }
 ```
 AuthenticationProvider를 리스트로 관리하고 있고, authenticate()메서드에서 for문으로 리스트를 순환하며 provider 클래스의 supports() 메서드를 호출하며 인증 메커니즘을 수행한다.<br>
-4. Authentication Provider(인증 제공자) 인터페이스는 유저가 입력한 정보롸 DB의 정보를 비교하는 일을 수행하고 아래와 같은 구현체들이 있다.
+4. Authentication Provider(인증 제공자) 인터페이스는 유저가 입력한 정보와 DB의 정보를 비교하는 일을 수행하고 아래와 같은 구현체들이 있다.
 - DaoAuthenticationProvider : 유저 이름과 비밀번호를 사용한 인증 처리
 - JwtAuthenticationProvider : JWT를 사용한 인증 처리
 <br><br>이외에도 구현체들이 더 있지만 주로 언급되는 두 개만 적어두고 생략.
@@ -103,7 +103,7 @@ AuthenticationProviders는 UserDetails를 받아 유저 정보를 비교한다.
 - Credentials(자격 증명) : 사용자 비밀번호
 - Authorities(권한) : 인증된 사용자의 권한 목록
 - Authenticated(인증여부)<br><br>
-성공하면 AuthenticationSuccessHandler 실행, AuthenticationFailureHandler
+성공하면 AuthenticationSuccessHandler 실행, 실패하면 AuthenticationFailureHandler
 9. 인증 완료 <br>
 AuthenticationManager는 Authentication 객체를 관련 AuthenticationFilter로 반환한다.
 10. SecurityContext에 Authentication 객체 저장<br>
